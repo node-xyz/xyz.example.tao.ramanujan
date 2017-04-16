@@ -1,0 +1,14 @@
+{
+  "nodes": [
+    {
+      "path": "entry.store/index.js",
+      "stdio": "file",
+      "port": 4000
+    },
+    {
+      "path": "post/index.js",
+      "stdio": "file",
+      "port": 4500
+    }
+  ]
+}

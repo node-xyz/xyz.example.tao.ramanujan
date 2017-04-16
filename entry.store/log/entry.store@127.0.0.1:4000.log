@@ -1,0 +1,51 @@
+[2017-4-16 22:17:52][[4m[1mundefined[0m[0m] [1m[32minfo[0m[0m :: CONFIG :: Setting default selfConf 
+[2017-4-16 22:17:52][[4m[1mundefined[0m[0m] [1m[32minfo[0m[0m :: CONFIG :: Reading selfConf from user 
+[2017-4-16 22:17:52][[4m[1mundefined[0m[0m] [1m[32minfo[0m[0m :: CONFIG :: Reading selfConf from command line 
+[2017-4-16 22:17:52][[4m[1mundefined[0m[0m] [1m[34mverbose[0m[0m :: CONFIG :: overriding selfConf.cli.enable from command line value {true} 
+[2017-4-16 22:17:52][[4m[1mundefined[0m[0m] [1m[34mverbose[0m[0m :: CONFIG :: overriding selfConf.cli.stdio from command line value {file} 
+[2017-4-16 22:17:52][[4m[1mundefined[0m[0m] [1m[32minfo[0m[0m :: CONFIG :: Setting default systemConf 
+[2017-4-16 22:17:52][[4m[1mundefined[0m[0m] [1m[32minfo[0m[0m :: CONFIG :: reading systemConf from user 
+[2017-4-16 22:17:52][[4m[1mundefined[0m[0m] [1m[32minfo[0m[0m :: CONFIG :: Reading selfConf from command line 
+[2017-4-16 22:17:52][[4m[1mundefined[0m[0m] [1m[34mverbose[0m[0m :: CONFIG :: overriding systemConf.node from command line value {127.0.0.1:9000} 
+[2017-4-16 22:17:52][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[32minfo[0m[0m :: Transport :: new outgoing message route [1mCALL[0m added 
+[2017-4-16 22:17:52][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[32minfo[0m[0m :: HTTP Server @ 4000 :: new message route [1mCALL[0m added 
+[2017-4-16 22:17:52][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[33mwarn[0m[0m :: CONFIG :: cannot add a server with port 4000 to selfConf. already exists 
+[2017-4-16 22:17:52][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[32minfo[0m[0m :: SR :: new transport server [HTTP] created on port 4000 
+[2017-4-16 22:17:52][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[32minfo[0m[0m :: SR :: ServiceRepository events bounded for [HTTP] server port 4000 
+[2017-4-16 22:17:52][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[32minfo[0m[0m :: SR :: default sendStategy set to _firstFind 
+[2017-4-16 22:17:52][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[32minfo[0m[0m :: Transport :: new outgoing message route [1mPING[0m added 
+[2017-4-16 22:17:52][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[32minfo[0m[0m :: HTTP Server @ 4000 :: new message route [1mPING[0m added 
+[2017-4-16 22:17:52][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[32minfo[0m[0m :: default ping bootstraped for approx. every 2000 ms 
+[2017-4-16 22:17:52][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[32minfo[0m[0m :: ipc channel created from default ping 
+[2017-4-16 22:17:52][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[34mverbose[0m[0m :: sending config info for possible xyz-cli listener instance 
+[2017-4-16 22:17:52][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[32minfo[0m[0m :: HTTP Server @ 4000 :: HTTP Server listening on port : 4000 
+[2017-4-16 22:17:52][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:17:54][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:17:55][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[34mverbose[0m[0m :: SR :: ServiceRepository received message  [1m{"_id":"kian","text":"foo"}[0m 
+[2017-4-16 22:17:58][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:18:1][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:18:3][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:18:6][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:18:9][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:18:13][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:18:17][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:18:20][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:18:22][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:18:25][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:18:29][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:18:31][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:18:33][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:18:37][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:18:40][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:18:43][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:18:45][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:18:48][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:18:50][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:18:53][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:18:56][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:19:0][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:19:2][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:19:4][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:19:8][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:19:11][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:19:13][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  

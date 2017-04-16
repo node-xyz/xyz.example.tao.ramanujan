@@ -1,0 +1,362 @@
+[2017-4-16 22:21:31][[4m[1mundefined[0m[0m] [1m[32minfo[0m[0m :: CONFIG :: Setting default selfConf 
+[2017-4-16 22:21:31][[4m[1mundefined[0m[0m] [1m[32minfo[0m[0m :: CONFIG :: Reading selfConf from user 
+[2017-4-16 22:21:31][[4m[1mundefined[0m[0m] [1m[32minfo[0m[0m :: CONFIG :: Reading selfConf from command line 
+[2017-4-16 22:21:31][[4m[1mundefined[0m[0m] [1m[34mverbose[0m[0m :: CONFIG :: overriding selfConf.cli.enable from command line value {true} 
+[2017-4-16 22:21:31][[4m[1mundefined[0m[0m] [1m[34mverbose[0m[0m :: CONFIG :: overriding selfConf.cli.stdio from command line value {file} 
+[2017-4-16 22:21:31][[4m[1mundefined[0m[0m] [1m[32minfo[0m[0m :: CONFIG :: Setting default systemConf 
+[2017-4-16 22:21:31][[4m[1mundefined[0m[0m] [1m[32minfo[0m[0m :: CONFIG :: reading systemConf from user 
+[2017-4-16 22:21:31][[4m[1mundefined[0m[0m] [1m[32minfo[0m[0m :: CONFIG :: Reading selfConf from command line 
+[2017-4-16 22:21:31][[4m[1mundefined[0m[0m] [1m[34mverbose[0m[0m :: CONFIG :: overriding systemConf.node from command line value {127.0.0.1:9000} 
+[2017-4-16 22:21:31][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[32minfo[0m[0m :: Transport :: new outgoing message route [1mCALL[0m added 
+[2017-4-16 22:21:31][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[32minfo[0m[0m :: HTTP Server @ 4500 :: new message route [1mCALL[0m added 
+[2017-4-16 22:21:31][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[33mwarn[0m[0m :: CONFIG :: cannot add a server with port 4500 to selfConf. already exists 
+[2017-4-16 22:21:31][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[32minfo[0m[0m :: SR :: new transport server [HTTP] created on port 4500 
+[2017-4-16 22:21:31][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[32minfo[0m[0m :: SR :: ServiceRepository events bounded for [HTTP] server port 4500 
+[2017-4-16 22:21:31][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[32minfo[0m[0m :: SR :: default sendStategy set to _firstFind 
+[2017-4-16 22:21:31][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[32minfo[0m[0m :: Transport :: new outgoing message route [1mPING[0m added 
+[2017-4-16 22:21:31][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[32minfo[0m[0m :: HTTP Server @ 4500 :: new message route [1mPING[0m added 
+[2017-4-16 22:21:31][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[32minfo[0m[0m :: default ping bootstraped for approx. every 2000 ms 
+[2017-4-16 22:21:31][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[32minfo[0m[0m :: ipc channel created from default ping 
+[2017-4-16 22:21:31][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[34mverbose[0m[0m :: sending config info for possible xyz-cli listener instance 
+[2017-4-16 22:21:31][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[32minfo[0m[0m :: CONFIG :: new server {"type":"UDP","port":5500,"event":true} added at runtime to selfConf 
+[2017-4-16 22:21:31][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[32minfo[0m[0m :: SR :: new transport server [UDP] created on port 5500 
+[2017-4-16 22:21:31][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[32minfo[0m[0m :: SR :: ServiceRepository events bounded for [UDP] server port 5500 
+[2017-4-16 22:21:31][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[32minfo[0m[0m :: UDP Server @ 5500 :: new message route [1mUDP_CALL[0m added 
+[2017-4-16 22:21:31][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[32minfo[0m[0m :: Transport :: new outgoing message route [1mUDP_CALL[0m added 
+[2017-4-16 22:21:31][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[33mwarn[0m[0m :: Transport :: no middlewareHandler defined for route UDP_CALL. an empty one will be used 
+[2017-4-16 22:21:31][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[32minfo[0m[0m :: UDP TUNNEL :: Udp tunnel created with route UDP_CALL | port 5500 
+
+____________________  GLOBAL ____________________
+[1m[34mselfConfig[0m[0m:
+  {
+  "name": "post",
+  "defaultSendStrategy": "./Middleware/service.first.find",
+  "logLevel": "verbose",
+  "seed": [
+    "127.0.0.1:3000"
+  ],
+  "transport": [
+    {
+      "type": "HTTP",
+      "port": 4500
+    },
+    {
+      "type": "UDP",
+      "port": 5500,
+      "event": true
+    }
+  ],
+  "host": "127.0.0.1",
+  "defaultBootstrap": true,
+  "cli": {
+    "enable": true,
+    "stdio": "file"
+  }
+}
+[1m[34msystemConf[0m[0m:
+  {
+  "nodes": [
+    "127.0.0.1:9000",
+    "127.0.0.1:4500"
+  ]
+}
+[1m[34mBootstrap Functions[0m[0m:
+  _basicPingBootstrap,_processInspectionEvent,_processNetworkEvent,_udpTunnel
+____________________  SERVICE REPOSITORY ____________________
+
+[32m[1mMiddlewares[0m[0m:
+  [1mservice.discovery.mw[0m || _firstFind[0]
+[32m[1mServices[0m[0m:
+  anonymousFN @ /post/entry
+
+____________________  TRANSPORT LAYER ____________________
+[1m[34mTransport[0m[0m:
+  [32m[1moutgoing middlewares[0m[0m:
+    [1mcall.dispatch.mw[0m [/[33mCALL[0m] || _httpExport[0]
+    [1mping.dispatch.mw[0m [/[33mPING[0m] || _httpExport[0]
+    [1mUDP_CALL.dispatch.mw[0m [/[33mUDP_CALL[0m] || _udpExport[0]
+
+  [1m[35mHTTPServer @ 4500[0m[0m ::
+    [32m[1mMiddlewares[0m[0m:
+    [1mcall.receive.mw[0m [/[33mCALL[0m] || _httpMessageEvent[0]
+    [1mping.receive.mw[0m [/[33mPING[0m] || _pingEvent[0]
+
+  [1m[35mUDPServer @ 5500[0m[0m ::
+    [32m[1mMiddlewares[0m[0m:
+    [1mUDP_CALL.receive.mw[0m [/[33mUDP_CALL[0m] || _udpEvent[0]
+
+
+
+[2017-4-16 22:21:31][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[32minfo[0m[0m :: HTTP Server @ 4500 :: HTTP Server listening on port : 4500 
+[2017-4-16 22:21:31][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[32minfo[0m[0m :: UDP Server listening on port 127.0.0.1:5500 
+[2017-4-16 22:21:31][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:21:33][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:21:34][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[34mverbose[0m[0m :: SR :: ServiceRepository received message  [1m{"_id":"kian","text":"foo"}[0m 
+[2017-4-16 22:21:36][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:21:39][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:21:42][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:21:45][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:21:49][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:21:52][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:21:55][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[34mverbose[0m[0m :: SR :: ServiceRepository received message  [1m{"_id":"kian","text":"foo"}[0m 
+[2017-4-16 22:21:55][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[33mwarn[0m[0m :: Sending a message to /entry/save from first find strategy failed (Local Response) 
+[2017-4-16 22:21:55][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[32minfo[0m[0m ::  
+[2017-4-16 22:21:56][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:21:59][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:22:3][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:22:5][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:22:8][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:22:10][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:22:14][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:22:18][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:22:22][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:22:25][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:22:28][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:22:30][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:22:34][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:22:37][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:22:39][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:22:40][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[33mwarn[0m[0m :: PING :: new node is pinging me. adding to joinCandidate list. address : 127.0.0.1:4000 
+[2017-4-16 22:22:40][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[32minfo[0m[0m :: A new node {127.0.0.1:4000} added to systemConf 
+[2017-4-16 22:22:40][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[32minfo[0m[0m :: SR :: [1mSystem Configuration changed[0m new values: {"nodes":["127.0.0.1:9000","127.0.0.1:4500","127.0.0.1:4000"]} 
+[2017-4-16 22:22:41][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:22:45][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:22:48][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:22:50][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:22:52][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[34mverbose[0m[0m :: SR :: ServiceRepository received message  [1m{"_id":"kian","text":"foo"}[0m 
+[2017-4-16 22:22:52][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[34mverbose[0m[0m :: [1mFIRST FIND[0m :: determined node for service [1m/entry/save[0m by first find strategy : [1m127.0.0.1:4000:/entry/save[0m 
+[2017-4-16 22:22:52][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[34mverbose[0m[0m :: [1mBROADCAST GLOBAL[0m :: sending message to 127.0.0.1:4500:/info/entry,127.0.0.1:9000:/info/entry,127.0.0.1:4000:/info/entry,   
+[2017-4-16 22:22:52][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[32minfo[0m[0m ::  
+[2017-4-16 22:22:52][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[34mverbose[0m[0m :: SR :: ServiceRepository received message  [1m{"_id":"kian","text":"foo"}[0m 
+[2017-4-16 22:22:52][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:22:55][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:22:59][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:23:2][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:23:5][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:23:8][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:23:11][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:23:13][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:23:17][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:23:21][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:23:24][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:23:26][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:23:28][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:23:31][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:23:34][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:23:36][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:23:39][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:23:42][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:23:44][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:23:48][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:23:52][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:23:54][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:23:58][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:24:1][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:24:3][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:24:6][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:24:8][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:24:11][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:24:14][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:24:16][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:24:18][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:24:21][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:24:24][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:24:27][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:24:30][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:24:34][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:24:37][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:24:39][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:24:42][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:24:44][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:24:47][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:24:51][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:24:54][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:24:58][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:25:1][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:25:5][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:25:8][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:25:10][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:25:14][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:25:17][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:25:20][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:25:22][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:25:24][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:25:27][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:25:31][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:25:34][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:25:38][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:25:40][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:25:44][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:25:48][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:25:52][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:25:55][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:25:57][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:26:1][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:26:4][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:26:7][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:26:11][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:26:13][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:26:17][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:26:20][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:26:23][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:26:26][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:26:28][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:26:31][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:26:34][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:26:36][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:26:39][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:26:43][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:26:45][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:26:48][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:26:50][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:26:54][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:26:57][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:27:0][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:27:4][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:27:8][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:27:11][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:27:14][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:27:17][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:27:19][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:27:23][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:27:25][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:27:29][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:27:31][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:27:34][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:27:37][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:27:39][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:27:42][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:27:46][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:27:48][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:27:51][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:27:53][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:27:57][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:28:0][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:28:3][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:28:6][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:28:9][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:28:12][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:28:15][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:28:18][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:28:20][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:28:22][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:28:26][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:28:29][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:28:32][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:28:35][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:28:38][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:28:42][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:28:46][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:28:50][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:28:52][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:28:54][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:28:57][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:29:1][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:29:3][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:29:7][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:29:9][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:29:11][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:29:15][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:29:18][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:29:20][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:29:24][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:29:27][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:29:29][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:29:33][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:29:36][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:29:38][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:29:41][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:29:44][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:29:48][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:29:52][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:29:56][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:30:0][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:30:4][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:30:7][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:30:10][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:30:14][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:30:17][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:30:19][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:30:22][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:30:25][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:30:27][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:30:30][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:30:34][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:30:36][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:30:39][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:30:41][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:30:44][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:30:47][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:30:50][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:30:53][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:30:55][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:30:58][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:31:1][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:31:5][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:31:8][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:31:11][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:31:14][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:31:16][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:31:20][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:31:22][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:31:25][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:31:27][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:31:30][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:31:34][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:31:37][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:31:40][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:31:42][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:31:46][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:31:50][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:31:53][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:31:56][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:31:59][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:32:2][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:32:4][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:32:6][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:32:10][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:32:13][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:32:16][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:32:20][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:32:23][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:32:27][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:32:31][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:32:34][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:32:36][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:32:39][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:32:41][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:32:45][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:32:48][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:32:51][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:32:54][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:32:57][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:33:0][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:33:4][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:33:7][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:33:11][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:33:14][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:33:17][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:33:20][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:33:22][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:33:25][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:33:27][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:33:29][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:33:33][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:33:37][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:33:40][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:33:43][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:33:45][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:33:48][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:33:51][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:33:53][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:33:56][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:33:59][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:34:3][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:34:6][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:34:9][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:34:13][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:34:16][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:34:20][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:34:23][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:34:26][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-16 22:34:29][[4m[1mpost@127.0.0.1:4500[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
