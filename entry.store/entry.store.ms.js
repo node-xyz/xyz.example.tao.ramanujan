@@ -6,7 +6,7 @@ const redisClient = redis.createClient()
 let entryStore = new XYZ(CONSTANTS.CONSTRUCTOR)
 
 /**
- * @example call 0 /entry/list
+ * @example xyz > call entry.store@127.0.0.1:4000 /entry/list '{"_id": "kian"}'
  */
 entryStore.register('/entry/list', (body, response) => {
   let _id = body._id
@@ -21,7 +21,7 @@ entryStore.register('/entry/list', (body, response) => {
  * Save a new entry
  * @example
  * xyz > single entry.store/index.js
- * xyz > call 0 /entry/list '{"_id": "kian" ,"text":"foo" }'
+ * xyz > call entry.store@127.0.0.1:4000 /entry/save '{"_id": "kian", "text": "fooooo"}'
  */
 entryStore.register('/entry/save', (body, response) => {
   let _id = body._id

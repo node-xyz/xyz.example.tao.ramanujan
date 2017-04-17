@@ -12,5 +12,10 @@
     "mongoose": "^4.9.4",
     "redis": "^2.7.1",
     "xyz-core": "^0.4.0"
+  },
+  "devDependencies": {
+    "mocha": "latest",
+    "chai": "latest",
+    "xyz-cli": "latest"
   }
 }

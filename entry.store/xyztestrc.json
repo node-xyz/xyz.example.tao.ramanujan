@@ -1,0 +1,8 @@
+{
+  "nodes": [
+    {
+      "path": "./entry.store.ms",
+      "stdio": "file"
+    }
+  ]
+}
