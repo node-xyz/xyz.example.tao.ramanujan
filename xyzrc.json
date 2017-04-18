@@ -5,11 +5,15 @@
       "stdio": "file"
     },
     {
-      "path": "post/index.js",
+      "path": "post/post.ms.js",
       "stdio": "file"
     },
     {
-      "path": "front/index.js",
+      "path": "front/front.ms.js",
+      "stdio": "file"
+    },
+    {
+      "path": "index/index.ms.js",
       "stdio": "file"
     }
   ]

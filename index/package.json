@@ -1,0 +1,21 @@
+{
+  "name": "index",
+  "version": "1.0.0",
+  "description": "index cache microservice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^4.9.4",
+    "redis": "^2.7.1",
+    "xyz-core": "^0.4.0"
+  },
+  "devDependencies": {
+    "mocha": "latest",
+    "chai": "latest",
+    "xyz-cli": "latest"
+  }
+}

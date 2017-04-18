@@ -1,26 +1,59 @@
-[2017-4-17 19:17:30][[4m[1mundefined[0m[0m] [1m[32minfo[0m[0m :: CONFIG :: Setting default selfConf 
-[2017-4-17 19:17:30][[4m[1mundefined[0m[0m] [1m[32minfo[0m[0m :: CONFIG :: Reading selfConf from user 
-[2017-4-17 19:17:30][[4m[1mundefined[0m[0m] [1m[32minfo[0m[0m :: CONFIG :: Reading selfConf from command line 
-[2017-4-17 19:17:30][[4m[1mundefined[0m[0m] [1m[34mverbose[0m[0m :: CONFIG :: overriding selfConf.cli.enable from command line value {true} 
-[2017-4-17 19:17:30][[4m[1mundefined[0m[0m] [1m[34mverbose[0m[0m :: CONFIG :: overriding selfConf.cli.stdio from command line value {file} 
-[2017-4-17 19:17:30][[4m[1mundefined[0m[0m] [1m[32minfo[0m[0m :: CONFIG :: Setting default systemConf 
-[2017-4-17 19:17:30][[4m[1mundefined[0m[0m] [1m[32minfo[0m[0m :: CONFIG :: reading systemConf from user 
-[2017-4-17 19:17:30][[4m[1mundefined[0m[0m] [1m[32minfo[0m[0m :: CONFIG :: Reading selfConf from command line 
-[2017-4-17 19:17:30][[4m[1mundefined[0m[0m] [1m[34mverbose[0m[0m :: CONFIG :: overriding systemConf.node from command line value {127.0.0.1:9000} 
-[2017-4-17 19:17:30][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[32minfo[0m[0m :: Transport :: new outgoing message route [1mCALL[0m added 
-[2017-4-17 19:17:30][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[32minfo[0m[0m :: HTTP Server @ 4000 :: new message route [1mCALL[0m added 
-[2017-4-17 19:17:30][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[33mwarn[0m[0m :: CONFIG :: cannot add a server with port 4000 to selfConf. already exists 
-[2017-4-17 19:17:30][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[32minfo[0m[0m :: SR :: new transport server [HTTP] created on port 4000 
-[2017-4-17 19:17:30][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[32minfo[0m[0m :: SR :: ServiceRepository events bounded for [HTTP] server port 4000 
-[2017-4-17 19:17:30][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[32minfo[0m[0m :: SR :: default sendStategy set to _firstFind 
-[2017-4-17 19:17:30][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[32minfo[0m[0m :: Transport :: new outgoing message route [1mPING[0m added 
-[2017-4-17 19:17:30][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[32minfo[0m[0m :: HTTP Server @ 4000 :: new message route [1mPING[0m added 
-[2017-4-17 19:17:30][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[32minfo[0m[0m :: default ping bootstraped for approx. every 2000 ms 
-[2017-4-17 19:17:30][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[32minfo[0m[0m :: ipc channel created from default ping 
-[2017-4-17 19:17:30][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[34mverbose[0m[0m :: sending config info for possible xyz-cli listener instance 
-[2017-4-17 19:17:30][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[32minfo[0m[0m :: HTTP Server @ 4000 :: HTTP Server listening on port : 4000 
-[2017-4-17 19:17:30][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
-[2017-4-17 19:17:33][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
-[2017-4-17 19:17:36][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
-[2017-4-17 19:17:38][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[34mverbose[0m[0m :: SR :: ServiceRepository received message  [1m{"_id":"xyz-tester","text":"a message from tester"}[0m 
-[2017-4-17 19:17:38][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[34mverbose[0m[0m :: SR :: ServiceRepository received message  [1m{"_id":"xyz-tester"}[0m 
+[2017-4-18 13:36:51][[4m[1mundefined[0m[0m] [1m[32minfo[0m[0m :: CONFIG :: Setting default selfConf 
+[2017-4-18 13:36:51][[4m[1mundefined[0m[0m] [1m[32minfo[0m[0m :: CONFIG :: Reading selfConf from user 
+[2017-4-18 13:36:51][[4m[1mundefined[0m[0m] [1m[32minfo[0m[0m :: CONFIG :: Reading selfConf from command line 
+[2017-4-18 13:36:51][[4m[1mundefined[0m[0m] [1m[34mverbose[0m[0m :: CONFIG :: overriding selfConf.cli.enable from command line value {true} 
+[2017-4-18 13:36:51][[4m[1mundefined[0m[0m] [1m[34mverbose[0m[0m :: CONFIG :: overriding selfConf.cli.stdio from command line value {file} 
+[2017-4-18 13:36:51][[4m[1mundefined[0m[0m] [1m[32minfo[0m[0m :: CONFIG :: Setting default systemConf 
+[2017-4-18 13:36:51][[4m[1mundefined[0m[0m] [1m[32minfo[0m[0m :: CONFIG :: reading systemConf from user 
+[2017-4-18 13:36:51][[4m[1mundefined[0m[0m] [1m[32minfo[0m[0m :: CONFIG :: Reading selfConf from command line 
+[2017-4-18 13:36:51][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[32minfo[0m[0m :: Transport :: new outgoing message route [1mCALL[0m added 
+[2017-4-18 13:36:51][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[32minfo[0m[0m :: HTTP Server @ 4000 :: new message route [1mCALL[0m added 
+[2017-4-18 13:36:51][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[33mwarn[0m[0m :: CONFIG :: cannot add a server with port 4000 to selfConf. already exists 
+[2017-4-18 13:36:51][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[32minfo[0m[0m :: SR :: new transport server [HTTP] created on port 4000 
+[2017-4-18 13:36:51][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[32minfo[0m[0m :: SR :: ServiceRepository events bounded for [HTTP] server port 4000 
+[2017-4-18 13:36:51][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[32minfo[0m[0m :: SR :: default sendStategy set to _firstFind 
+[2017-4-18 13:36:51][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[32minfo[0m[0m :: Transport :: new outgoing message route [1mPING[0m added 
+[2017-4-18 13:36:51][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[32minfo[0m[0m :: HTTP Server @ 4000 :: new message route [1mPING[0m added 
+[2017-4-18 13:36:51][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[32minfo[0m[0m :: default ping bootstraped for approx. every 2000 ms 
+[2017-4-18 13:36:51][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[32minfo[0m[0m :: ipc channel created from default ping 
+[2017-4-18 13:36:51][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[34mverbose[0m[0m :: sending config info for possible xyz-cli listener instance 
+[2017-4-18 13:36:51][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[32minfo[0m[0m :: HTTP Server @ 4000 :: HTTP Server listening on port : 4000 
+[2017-4-18 13:36:51][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[31merror[0m[0m :: [1mJOIN PING REJECTED[0m :: seed node 127.0.0.1:3000 rejected with  
+[2017-4-18 13:36:53][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[32minfo[0m[0m :: [1mJOIN PING ACCEPTED[0m. response : {"services":{"":{}},"nodes":["127.0.0.1:3000"],"transportServers":{"3000":["CALL","PING"]}} 
+[2017-4-18 13:36:53][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[32minfo[0m[0m :: A new node {127.0.0.1:3000} added to systemConf 
+[2017-4-18 13:36:53][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[32minfo[0m[0m :: SR :: [1mSystem Configuration changed[0m new values: {"nodes":["127.0.0.1:4000","127.0.0.1:3000"]} 
+[2017-4-18 13:36:57][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[33mwarn[0m[0m :: PING :: new join candidate suggested by 127.0.0.1:3000 : {127.0.0.1:5000} 
+[2017-4-18 13:36:58][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[33mwarn[0m[0m :: PING :: new node is pinging me. adding to joinCandidate list. address : 127.0.0.1:5000 
+[2017-4-18 13:36:59][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[33mwarn[0m[0m :: PING :: new join candidate suggested by 127.0.0.1:3000 : {127.0.0.1:5000} 
+[2017-4-18 13:36:59][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[32minfo[0m[0m :: A new node {127.0.0.1:5000} added to systemConf 
+[2017-4-18 13:36:59][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[32minfo[0m[0m :: SR :: [1mSystem Configuration changed[0m new values: {"nodes":["127.0.0.1:4000","127.0.0.1:3000","127.0.0.1:5000"]} 
+[2017-4-18 13:36:59][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[33mwarn[0m[0m :: Node 127.0.0.1:5000 already in systemConf. Passing. 
+[2017-4-18 13:36:59][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[32minfo[0m[0m :: SR :: [1mSystem Configuration changed[0m new values: {"nodes":["127.0.0.1:4000","127.0.0.1:3000","127.0.0.1:5000"]} 
+[2017-4-18 13:37:2][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[33mwarn[0m[0m :: Node 127.0.0.1:5000 already in systemConf. Passing. 
+[2017-4-18 13:37:2][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[32minfo[0m[0m :: SR :: [1mSystem Configuration changed[0m new values: {"nodes":["127.0.0.1:4000","127.0.0.1:3000","127.0.0.1:5000"]} 
+[2017-4-18 13:38:38][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[34mverbose[0m[0m :: SR :: ServiceRepository received message  [1m{"_id":"kian_test","text":"sth"}[0m 
+[2017-4-18 13:38:38][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[34mverbose[0m[0m :: SR :: ServiceRepository received message  [1m{"_id":"kian_test","text":"sth"}[0m 
+[2017-4-18 13:39:49][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[34mverbose[0m[0m :: SR :: ServiceRepository received message  [1m{"_id":"kian_test","text":"sth"}[0m 
+[2017-4-18 13:39:49][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[34mverbose[0m[0m :: SR :: ServiceRepository received message  [1m{"_id":"kian_test","text":"sth"}[0m 
+[2017-4-18 13:41:20][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[33mwarn[0m[0m :: PING :: new join candidate suggested by 127.0.0.1:3000 : {127.0.0.1:6000} 
+[2017-4-18 13:41:21][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[33mwarn[0m[0m :: PING :: new node is pinging me. adding to joinCandidate list. address : 127.0.0.1:6000 
+[2017-4-18 13:41:23][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[33mwarn[0m[0m :: PING :: new join candidate suggested by 127.0.0.1:3000 : {127.0.0.1:6000} 
+[2017-4-18 13:41:23][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[33mwarn[0m[0m :: PING :: new join candidate suggested by 127.0.0.1:5000 : {127.0.0.1:6000} 
+[2017-4-18 13:41:23][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[32minfo[0m[0m :: A new node {127.0.0.1:6000} added to systemConf 
+[2017-4-18 13:41:23][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[32minfo[0m[0m :: SR :: [1mSystem Configuration changed[0m new values: {"nodes":["127.0.0.1:4000","127.0.0.1:3000","127.0.0.1:5000","127.0.0.1:6000"]} 
+[2017-4-18 13:41:23][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[33mwarn[0m[0m :: Node 127.0.0.1:6000 already in systemConf. Passing. 
+[2017-4-18 13:41:23][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[32minfo[0m[0m :: SR :: [1mSystem Configuration changed[0m new values: {"nodes":["127.0.0.1:4000","127.0.0.1:3000","127.0.0.1:5000","127.0.0.1:6000"]} 
+[2017-4-18 13:41:26][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[33mwarn[0m[0m :: Node 127.0.0.1:6000 already in systemConf. Passing. 
+[2017-4-18 13:41:26][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[32minfo[0m[0m :: SR :: [1mSystem Configuration changed[0m new values: {"nodes":["127.0.0.1:4000","127.0.0.1:3000","127.0.0.1:5000","127.0.0.1:6000"]} 
+[2017-4-18 13:41:26][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[33mwarn[0m[0m :: Node 127.0.0.1:6000 already in systemConf. Passing. 
+[2017-4-18 13:41:26][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[32minfo[0m[0m :: SR :: [1mSystem Configuration changed[0m new values: {"nodes":["127.0.0.1:4000","127.0.0.1:3000","127.0.0.1:5000","127.0.0.1:6000"]} 
+[2017-4-18 13:41:40][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[34mverbose[0m[0m :: SR :: ServiceRepository received message  [1m{"_id":"kian_test","text":"sth"}[0m 
+[2017-4-18 13:41:40][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[34mverbose[0m[0m :: SR :: ServiceRepository received message  [1m{"_id":"kian_test","text":"sth"}[0m 
+[2017-4-18 13:42:55][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[34mverbose[0m[0m :: SR :: ServiceRepository received message  [1m{"_id":"kian_test","text":"sth"}[0m 
+[2017-4-18 13:42:55][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[34mverbose[0m[0m :: SR :: ServiceRepository received message  [1m{"_id":"kian_test","text":"sth"}[0m 
+[2017-4-18 13:42:57][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[34mverbose[0m[0m :: SR :: ServiceRepository received message  [1m{"_id":"kian_test","text":"sth1"}[0m 
+[2017-4-18 13:42:57][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[34mverbose[0m[0m :: SR :: ServiceRepository received message  [1m{"_id":"kian_test","text":"sth1"}[0m 
+[2017-4-18 13:42:58][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[34mverbose[0m[0m :: SR :: ServiceRepository received message  [1m{"_id":"kian_test","text":"sth2"}[0m 
+[2017-4-18 13:42:58][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[34mverbose[0m[0m :: SR :: ServiceRepository received message  [1m{"_id":"kian_test","text":"sth2"}[0m 
+[2017-4-18 13:43:1][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[34mverbose[0m[0m :: SR :: ServiceRepository received message  [1m{"_id":"kian_test","text":"sth3"}[0m 
+[2017-4-18 13:43:1][[4m[1mentry.store@127.0.0.1:4000[0m[0m] [1m[34mverbose[0m[0m :: SR :: ServiceRepository received message  [1m{"_id":"kian_test","text":"sth3"}[0m 

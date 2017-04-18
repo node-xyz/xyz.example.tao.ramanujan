@@ -3,8 +3,12 @@ module.exports = {
     selfConf: {
       name: 'index.ms',
       logLevel: 'verbose',
+
+      // front node
+      seed: ['127.0.0.1:3000'],
+      
       transport: [
-        {type: 'HTTP', port: 3000}
+        {type: 'HTTP', port: 6000}
       ]
     }
   }
